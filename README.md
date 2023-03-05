@@ -25,6 +25,33 @@ need to install these additional packages using `tlmgr`:
 - [relsize](https://ctan.org/pkg/relsize)
 - [changepage](https://ctan.org/pkg/changepage)
 
+
+On my system, I was able to setup the build requirements with the following commands:
+```
+brew install basictex
+sudo tlmgr install latexmk
+sudo tlmgr install relsize
+sudo tlmgr install changepage
+```
+
 You will also need to install the following two fonts on your system:
 - [EB Garamond](https://fonts.google.com/specimen/EB+Garamond)
 - [Noto Sans Devanagari](https://fontmeme.com/fonts/noto-sans-devanagari-font/)
+
+## Building
+
+First, generate the content:
+```
+latexmk -xelatex metta-sutta.tex
+```
+
+Next, generate the signature:
+```
+latexmk -xelatex book.tex
+```
+
+Finally, clean up temporary files:
+```
+latexmk -c
+```
+
