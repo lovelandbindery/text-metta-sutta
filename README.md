@@ -7,6 +7,8 @@ This is a typesetting project I made to learn LaTeX and to provide a small singl
 The text contains the 10 verses of the Karaṇīyamettā Sutta written in both
 its original Pāli (using Devanagari script) and English.
 
+![metta-sutta](https://user-images.githubusercontent.com/110567463/222981433-c8f9e6d1-b1cb-4951-a8b7-76287756869c.png)
+
 ## What's Included
 
 - `metta-sutta.tex`: The LaTeX code that contains the book's text, layout,
